@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<vit>
+    <!--Measurements created with Valentina (http://www.valentina-project.org/).-->
+    <version>0.3.3</version>
+    <read-only>false</read-only>
+    <notes/>
+    <unit>cm</unit>
+    <pm_system>998</pm_system>
+    <personal>
+        <family-name/>
+        <given-name/>
+        <birth-date>1800-01-01</birth-date>
+        <gender>unknown</gender>
+        <email/>
+    </personal>
+    <body-measurements>
+        <m value="5" name="@button_wall"/>
+        <m value="125" name="@height"/>
+        <m value="5" name="@spacing_top"/>
+        <m value="50" name="@wall_height"/>
+        <m value="@wall_height-@button_wall" name="@top_wallheight"/>
+        <m value="3.14159" name="@Pi"/>
+        <m value="90" name="@width"/>
+        <m value="290" name="@lenght"/>
+    </body-measurements>
+</vit>
