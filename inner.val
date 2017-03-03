@@ -1,28 +1,28 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <pattern>
     <!--Pattern created with Valentina (http://www.valentina-project.org/).-->
-    <version>0.4.0</version>
+    <version>0.4.1</version>
     <unit>cm</unit>
     <author/>
     <description/>
     <notes/>
     <measurements>mid.vit</measurements>
     <increments/>
-    <draw name="button">
+    <draw name="bottom">
         <calculation>
             <point id="1" mx="0.132292" x="0.79375" y="1.05833" name="A" type="single" my="0.264583"/>
             <point id="2" basePoint="1" typeLine="hair" mx="0.132292" length="(@width/2-20)" name="A1" lineColor="black" type="endLine" angle="180" my="0.264583"/>
             <point id="3" firstPoint="1" typeLine="hair" mx="0.132292" secondPoint="2" length="-(@lenght-70)" name="A2" lineColor="black" type="normal" angle="0" my="0.264583"/>
             <point id="4" firstPoint="3" typeLine="hair" mx="0.132292" secondPoint="1" length="-(@width/2-10)" name="A3" lineColor="black" type="normal" angle="0" my="0.264583"/>
             <line id="5" firstPoint="2" typeLine="hair" secondPoint="4" lineColor="black"/>
-            <point id="6" firstPoint="4" typeLine="hair" mx="0.132292" secondPoint="3" length="@button_wall" name="A4" lineColor="black" type="normal" angle="0" my="0.264583"/>
-            <point id="7" firstPoint="3" typeLine="hair" mx="0.132292" secondPoint="4" length="-@button_wall" name="A5" lineColor="black" type="normal" angle="0" my="0.264583"/>
+            <point id="6" firstPoint="4" typeLine="hair" mx="0.132292" secondPoint="3" length="@bottom_wall" name="A4" lineColor="black" type="normal" angle="0" my="0.264583"/>
+            <point id="7" firstPoint="3" typeLine="hair" mx="0.132292" secondPoint="4" length="-@bottom_wall" name="A5" lineColor="black" type="normal" angle="0" my="0.264583"/>
             <line id="8" firstPoint="6" typeLine="hair" secondPoint="7" lineColor="black"/>
-            <point id="9" firstPoint="4" typeLine="hair" mx="0.132292" secondPoint="2" length="-@button_wall" name="A6" lineColor="black" type="normal" angle="0" my="0.264583"/>
-            <point id="10" firstPoint="2" typeLine="hair" mx="0.132292" secondPoint="4" length="@button_wall" name="A7" lineColor="black" type="normal" angle="0" my="0.264583"/>
+            <point id="9" firstPoint="4" typeLine="hair" mx="0.132292" secondPoint="2" length="-@bottom_wall" name="A6" lineColor="black" type="normal" angle="0" my="0.264583"/>
+            <point id="10" firstPoint="2" typeLine="hair" mx="0.132292" secondPoint="4" length="@bottom_wall" name="A7" lineColor="black" type="normal" angle="0" my="0.264583"/>
             <line id="11" firstPoint="9" typeLine="hair" secondPoint="10" lineColor="black"/>
-            <point id="12" firstPoint="2" typeLine="hair" mx="0.132292" secondPoint="1" length="-@button_wall" name="A8" lineColor="black" type="normal" angle="0" my="0.264583"/>
-            <point id="13" firstPoint="1" typeLine="hair" mx="0.132292" secondPoint="2" length="@button_wall" name="A9" lineColor="black" type="normal" angle="0" my="0.264583"/>
+            <point id="12" firstPoint="2" typeLine="hair" mx="0.132292" secondPoint="1" length="-@bottom_wall" name="A8" lineColor="black" type="normal" angle="0" my="0.264583"/>
+            <point id="13" firstPoint="1" typeLine="hair" mx="0.132292" secondPoint="2" length="@bottom_wall" name="A9" lineColor="black" type="normal" angle="0" my="0.264583"/>
             <line id="14" firstPoint="12" typeLine="hair" secondPoint="13" lineColor="black"/>
         </calculation>
         <modeling>
@@ -56,8 +56,8 @@
             </path>
         </modeling>
         <details>
-            <detail id="47" version="2" forbidFlipping="false" width="1.5" united="false" mx="70.672" name="Button" inLayout="false" seamAllowance="true" my="0.186501">
-                <data letter="Bu" width="414.169" mx="-750.474" height="190.886" fontSize="42" visible="true" rotation="0" my="-2521.26">
+            <detail id="47" version="2" forbidFlipping="false" width="1.5" united="false" mx="70.672" name="Bottom" inLayout="true" seamAllowance="true" my="0.186501">
+                <data letter="Bo" width="414.169" mx="-750.474" height="190.886" fontSize="42" visible="true" rotation="0" my="-2521.26">
                     <mcp placement="1" material="4" cutNumber="1" userDef="PU4000"/>
                 </data>
                 <patternInfo width="0" mx="0" height="0" fontSize="0" visible="false" rotation="0" my="0"/>
@@ -85,7 +85,7 @@
             <point id="18" mx="0.132292" x="141.899" y="1.05833" name="C" type="single" my="0.264583"/>
             <point id="19" basePoint="18" typeLine="hair" mx="0.132292" length="Line_A6_A7" name="C1" lineColor="black" type="endLine" angle="90" my="0.264583"/>
             <point id="20" firstPoint="18" typeLine="none" mx="0.132292" secondPoint="19" length="CurrentLength/2" name="C2" lineColor="black" type="alongLine" my="0.264583"/>
-            <point id="21" firstPoint="20" typeLine="none" mx="0.132292" secondPoint="18" length="@height-@spacing_top-@button_wall" name="C3" lineColor="black" type="normal" angle="0" my="0.264583"/>
+            <point id="21" firstPoint="20" typeLine="none" mx="0.132292" secondPoint="18" length="@height-@spacing_top-@bottom_wall" name="C3" lineColor="black" type="normal" angle="0" my="0.264583"/>
             <line id="22" firstPoint="18" typeLine="hair" secondPoint="21" lineColor="black"/>
             <line id="23" firstPoint="21" typeLine="hair" secondPoint="19" lineColor="black"/>
             <point id="56" firstPoint="18" typeLine="none" mx="0.132292" secondPoint="20" length="Line_C_C2/3" name="B1" lineColor="black" type="alongLine" my="0.264583"/>
@@ -153,9 +153,14 @@
                 <pathPoint angle2="0" length2="0" length1="0" angle1="180" pSpline="70"/>
                 <pathPoint angle2="0" length2="0" length1="0" angle1="180" pSpline="63"/>
             </spline>
+            <point id="159" firstPoint="21" thirdPoint="18" typeLine="dotLine" mx="0.132292" secondPoint="19" length="10" name="B23" lineColor="darkGreen" type="bisector" my="0.264583"/>
+            <line id="160" firstPoint="159" typeLine="dotLine" secondPoint="73" lineColor="darkGreen"/>
+            <point id="174" firstPoint="66" typeLine="none" mx="0.132292" secondPoint="63" length="CurrentLength/2" name="B24" lineColor="black" type="alongLine" my="0.264583"/>
+            <line id="175" firstPoint="75" typeLine="dotLine" secondPoint="174" lineColor="darkGreen"/>
+            <point id="186" firstPoint="66" typeLine="none" mx="0.132292" secondPoint="174" length="CurrentLength/2" name="B25" lineColor="black" type="alongLine" my="0.264583"/>
+            <line id="187" firstPoint="78" typeLine="dotLine" secondPoint="186" lineColor="darkGreen"/>
         </calculation>
         <modeling>
-            <spline id="86" idObject="67" inUse="false" type="modelingPath"/>
             <point id="90" idObject="66" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
             <point id="91" idObject="18" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
             <point id="92" idObject="19" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
@@ -167,9 +172,33 @@
             <spline id="101" idObject="98" inUse="true" type="modelingSpline"/>
             <spline id="102" idObject="99" inUse="true" type="modelingPath"/>
             <point id="103" idObject="63" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
+            <point id="161" idObject="73" inUse="true" mx="-0.358107" type="modeling" my="-1.64253"/>
+            <point id="162" idObject="19" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
+            <point id="163" idObject="21" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
+            <point id="164" idObject="63" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
+            <spline id="165" idObject="67" inUse="true" type="modelingPath"/>
+            <point id="167" idObject="66" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
+            <point id="168" idObject="18" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
+            <point id="169" idObject="19" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
+            <point id="170" idObject="73" inUse="true" mx="-0.358107" type="modeling" my="-1.64253"/>
+            <spline id="171" idObject="89" inUse="true" type="modelingPath"/>
+            <spline id="172" idObject="88" inUse="true" type="modelingSpline"/>
+            <point id="176" idObject="174" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
+            <point id="177" idObject="75" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
+            <spline id="178" idObject="99" inUse="true" type="modelingPath"/>
+            <point id="179" idObject="63" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
+            <point id="188" idObject="186" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
+            <point id="189" idObject="78" inUse="true" mx="0.513715" type="modeling" my="-0.443768"/>
+            <spline id="190" idObject="99" inUse="true" type="modelingPath"/>
+            <point id="191" idObject="75" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
+            <point id="192" idObject="174" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
+            <point id="194" idObject="66" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
+            <spline id="195" idObject="98" inUse="true" type="modelingSpline"/>
+            <point id="196" idObject="78" inUse="true" mx="0.513715" type="modeling" my="-0.443768"/>
+            <point id="197" idObject="186" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
         </modeling>
         <details>
-            <detail id="97" version="2" forbidFlipping="false" width="1.5" united="false" mx="0" name="Front" inLayout="true" seamAllowance="true" my="0">
+            <detail id="97" version="2" forbidFlipping="false" width="1.5" united="false" mx="0" name="Front" inLayout="false" seamAllowance="true" my="0">
                 <data letter="F" width="365.298" mx="5915.5" height="208.57" fontSize="51" visible="true" rotation="-721.536" my="-6029.7">
                     <mcp placement="0" material="4" cutNumber="1" userDef="RipStop"/>
                 </data>
@@ -185,7 +214,7 @@
                     <node idObject="96" reverse="0" type="NodeSpline"/>
                 </nodes>
             </detail>
-            <detail id="104" version="2" forbidFlipping="false" width="1.5" united="false" mx="27.8646" name="Door" inLayout="true" seamAllowance="true" my="33.3333">
+            <detail id="104" version="2" forbidFlipping="false" width="1.5" united="false" mx="27.8646" name="Door" inLayout="false" seamAllowance="true" my="33.3333">
                 <data letter="D" width="366.727" mx="6402.65" height="197.78" fontSize="48" visible="true" rotation="0" my="-3001.16">
                     <mcp placement="0" material="4" cutNumber="1" userDef="RipStop"/>
                 </data>
@@ -196,6 +225,75 @@
                     <node idObject="101" reverse="0" type="NodeSpline"/>
                     <node idObject="102" reverse="0" type="NodeSplinePath"/>
                     <node idObject="103" type="NodePoint"/>
+                </nodes>
+            </detail>
+            <detail id="166" version="2" forbidFlipping="false" width="1.5" united="false" mx="203.514" name="Front1" inLayout="false" seamAllowance="true" my="-2.19619">
+                <data letter="F1" width="322.674" mx="7013.01" height="223.935" fontSize="52" visible="true" rotation="0" my="-5805.17">
+                    <mcp placement="0" material="4" cutNumber="1" userDef="RipStop"/>
+                </data>
+                <patternInfo width="0" mx="0" height="0" fontSize="0" visible="false" rotation="0" my="0"/>
+                <grainline arrows="0" mx="0" length="0" visible="false" rotation="90" my="0"/>
+                <nodes>
+                    <node idObject="161" after="0" type="NodePoint"/>
+                    <node idObject="162" before="0" type="NodePoint"/>
+                    <node idObject="163" type="NodePoint"/>
+                    <node idObject="164" type="NodePoint"/>
+                    <node idObject="165" reverse="0" type="NodeSplinePath"/>
+                </nodes>
+            </detail>
+            <detail id="173" version="2" forbidFlipping="false" width="1.5" united="false" mx="189.064" name="Front2" inLayout="false" seamAllowance="true" my="5.33477">
+                <data letter="F2" width="417.232" mx="5661.65" height="309.432" fontSize="67" visible="true" rotation="0" my="-5853.37">
+                    <mcp placement="0" material="4" cutNumber="1" userDef="RipStop"/>
+                </data>
+                <patternInfo width="0" mx="0" height="0" fontSize="0" visible="false" rotation="0" my="0"/>
+                <grainline arrows="0" mx="0" length="0" visible="false" rotation="90" my="0"/>
+                <nodes>
+                    <node idObject="167" type="NodePoint"/>
+                    <node idObject="168" type="NodePoint"/>
+                    <node idObject="169" after="0" type="NodePoint"/>
+                    <node idObject="170" before="0" type="NodePoint"/>
+                    <node idObject="171" reverse="0" type="NodeSplinePath"/>
+                    <node idObject="172" reverse="0" type="NodeSpline"/>
+                </nodes>
+            </detail>
+            <detail id="180" version="2" forbidFlipping="false" width="1.5" united="false" mx="229.395" name="Front Door 1" inLayout="false" seamAllowance="true" my="119.286">
+                <data letter="FD1" width="281.767" mx="7316.82" height="211.066" fontSize="45" visible="true" rotation="0" my="-3952.35">
+                    <mcp placement="0" material="4" cutNumber="1" userDef="RipStop"/>
+                </data>
+                <patternInfo width="0" mx="0" height="0" fontSize="0" visible="false" rotation="0" my="0"/>
+                <grainline arrows="0" mx="0" length="0" visible="false" rotation="90" my="0"/>
+                <nodes>
+                    <node idObject="176" after="0" type="NodePoint"/>
+                    <node idObject="177" before="0" type="NodePoint"/>
+                    <node idObject="178" reverse="0" type="NodeSplinePath"/>
+                    <node idObject="179" type="NodePoint"/>
+                </nodes>
+            </detail>
+            <detail id="193" version="2" forbidFlipping="false" width="1.5" united="false" mx="203.575" name="Front Door 2" inLayout="false" seamAllowance="true" my="120.139">
+                <data letter="FD2" width="226.777" mx="6240.39" height="211.066" fontSize="36" visible="true" rotation="0" my="-2257.04">
+                    <mcp placement="0" material="4" cutNumber="1" userDef="RipStop"/>
+                </data>
+                <patternInfo width="0" mx="0" height="0" fontSize="0" visible="false" rotation="0" my="0"/>
+                <grainline arrows="0" mx="0" length="0" visible="false" rotation="90" my="0"/>
+                <nodes>
+                    <node idObject="188" after="0" type="NodePoint"/>
+                    <node idObject="189" before="0" type="NodePoint"/>
+                    <node idObject="190" reverse="0" type="NodeSplinePath"/>
+                    <node idObject="191" after="0" type="NodePoint"/>
+                    <node idObject="192" before="0" type="NodePoint"/>
+                </nodes>
+            </detail>
+            <detail id="198" version="2" forbidFlipping="false" width="1.5" united="false" mx="194.836" name="Front Door 3" inLayout="false" seamAllowance="true" my="129.61">
+                <data letter="FD3" width="340.685" mx="5772.97" height="195.355" fontSize="48" visible="true" rotation="0" my="-1339.48">
+                    <mcp placement="0" material="4" cutNumber="1" userDef="RipStop"/>
+                </data>
+                <patternInfo width="0" mx="0" height="0" fontSize="0" visible="false" rotation="0" my="0"/>
+                <grainline arrows="0" mx="0" length="0" visible="false" rotation="90" my="0"/>
+                <nodes>
+                    <node idObject="194" type="NodePoint"/>
+                    <node idObject="195" reverse="0" type="NodeSpline"/>
+                    <node idObject="196" after="0" type="NodePoint"/>
+                    <node idObject="197" before="0" type="NodePoint"/>
                 </nodes>
             </detail>
         </details>
@@ -209,6 +307,7 @@
             <line id="27" firstPoint="26" typeLine="hair" secondPoint="24" lineColor="black"/>
             <point id="105" firstPoint="25" typeLine="none" mx="0.132292" secondPoint="26" length="-@top_wallheight/sin((AngleLine_C3_C1-270)*(@Pi/180))" name="C4" lineColor="black" type="alongLine" my="0.264583"/>
             <point id="106" basePoint="105" typeLine="hair" mx="0.132292" p2Line="26" name="C5" p1Line="24" lineColor="black" type="lineIntersectAxis" angle="0" my="0.264583"/>
+            <point id="201" basePoint="106" typeLine="dotLine" mx="0.132292" p2Line="25" name="C6" p1Line="24" lineColor="darkGreen" type="lineIntersectAxis" angle="90" my="0.264583"/>
         </calculation>
         <modeling>
             <point id="107" idObject="25" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
@@ -218,9 +317,16 @@
             <point id="112" idObject="105" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
             <point id="113" idObject="26" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
             <point id="114" idObject="106" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
+            <point id="202" idObject="25" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
+            <point id="203" idObject="105" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
+            <point id="204" idObject="106" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
+            <point id="205" idObject="201" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
+            <point id="207" idObject="24" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
+            <point id="208" idObject="201" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
+            <point id="209" idObject="106" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
         </modeling>
         <details>
-            <detail id="111" version="2" forbidFlipping="false" width="1.5" united="false" mx="-84.9026" name="Head Button" inLayout="true" seamAllowance="true" my="-4.34083">
+            <detail id="111" version="2" forbidFlipping="false" width="1.5" united="false" mx="-83.1955" name="Head Bottom" inLayout="false" seamAllowance="true" my="112.597">
                 <data letter="HB" width="222.988" mx="1814.03" height="151.086" fontSize="36" visible="true" rotation="0" my="-826.463">
                     <mcp placement="0" material="4" cutNumber="1" userDef="RipStop"/>
                 </data>
@@ -233,7 +339,7 @@
                     <node idObject="110" type="NodePoint"/>
                 </nodes>
             </detail>
-            <detail id="115" version="2" forbidFlipping="false" width="1.5" united="false" mx="-84.8958" name="Head Top" inLayout="true" seamAllowance="true" my="-8.59375">
+            <detail id="115" version="2" forbidFlipping="false" width="1.5" united="false" mx="-84.8958" name="Head Top" seamAllowance="true" my="-8.59375">
                 <data letter="HT" width="162.791" mx="1579.24" height="153.608" fontSize="35" visible="true" rotation="0" my="-3216.6">
                     <mcp placement="0" material="4" cutNumber="1" userDef="Net"/>
                 </data>
@@ -243,6 +349,31 @@
                     <node idObject="112" type="NodePoint"/>
                     <node idObject="113" type="NodePoint"/>
                     <node idObject="114" type="NodePoint"/>
+                </nodes>
+            </detail>
+            <detail id="206" version="2" forbidFlipping="false" width="1.5" united="false" mx="343.133" name="Head Bottom2" inLayout="false" seamAllowance="true" my="-49.098">
+                <data letter="HB2" width="269.984" mx="1722.54" height="175.715" fontSize="38" visible="true" rotation="0" my="-984.355">
+                    <mcp placement="0" material="4" cutNumber="1" userDef="RipStop"/>
+                </data>
+                <patternInfo width="0" mx="0" height="0" fontSize="0" visible="false" rotation="0" my="0"/>
+                <grainline arrows="0" mx="0" length="0" visible="false" rotation="90" my="0"/>
+                <nodes>
+                    <node idObject="202" type="NodePoint"/>
+                    <node idObject="203" type="NodePoint"/>
+                    <node idObject="204" after="0" type="NodePoint"/>
+                    <node idObject="205" before="0" type="NodePoint"/>
+                </nodes>
+            </detail>
+            <detail id="210" version="2" forbidFlipping="false" width="1.5" united="false" mx="277.408" name="Head Bottom1" inLayout="false" seamAllowance="true" my="-29.448">
+                <data letter="HB1" width="242.489" mx="2936.23" height="148.22" fontSize="34" visible="true" rotation="0" my="-670.125">
+                    <mcp placement="0" material="4" cutNumber="1" userDef="RipStop"/>
+                </data>
+                <patternInfo width="0" mx="0" height="0" fontSize="0" visible="false" rotation="0" my="0"/>
+                <grainline arrows="0" mx="0" length="0" visible="false" rotation="90" my="0"/>
+                <nodes>
+                    <node idObject="207" type="NodePoint"/>
+                    <node idObject="208" after="0" type="NodePoint"/>
+                    <node idObject="209" before="0" type="NodePoint"/>
                 </nodes>
             </detail>
         </details>
@@ -267,7 +398,7 @@
             <point id="125" idObject="117" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
         </modeling>
         <details>
-            <detail id="121" version="2" forbidFlipping="false" width="1.5" united="false" mx="-0.260417" name="Foot Top" inLayout="true" seamAllowance="true" my="-2.86458">
+            <detail id="121" version="2" forbidFlipping="false" width="1.5" united="false" mx="-0.260417" name="Foot Top" seamAllowance="true" my="-2.86458">
                 <data letter="FT" width="223.822" mx="10495.3" height="176.99" fontSize="43" visible="true" rotation="0" my="-3207.67">
                     <mcp placement="0" material="4" cutNumber="1" userDef="Net"/>
                 </data>
@@ -279,7 +410,7 @@
                     <node idObject="120" type="NodePoint"/>
                 </nodes>
             </detail>
-            <detail id="126" version="2" forbidFlipping="false" width="1.5" united="false" mx="-0.0885079" name="Foot Button" inLayout="true" seamAllowance="true" my="2.30121">
+            <detail id="126" version="2" forbidFlipping="false" width="1.5" united="false" mx="153.98" name="Foot Bottom" inLayout="false" seamAllowance="true" my="-19.6781">
                 <data letter="FB" width="257.274" mx="10819.7" height="183.68" fontSize="41" visible="true" rotation="0" my="-1243.6">
                     <mcp placement="0" material="4" cutNumber="1" userDef="RipStop"/>
                 </data>
@@ -316,6 +447,14 @@
             <point id="138" basePoint="131" typeLine="none" mx="0.132292" name="E11" lineColor="black" type="curveIntersectAxis" angle="AngleLine_E7_E8" curve="134" my="0.264583"/>
             <arc id="153" radius="RadiusArc_E9_140" angle2="0" center="133" angle1="-176" type="simple" color="black"/>
             <spline id="154" angle2="272.736" length2="58.5028" angle1="266.685" length1="56.1017" point4="135" type="simpleInteractive" point1="138" color="black"/>
+            <point id="199" firstPoint="32" typeLine="none" mx="0.132292" secondPoint="33" length="CurrentLength/2" name="E12" lineColor="black" type="alongLine" my="0.264583"/>
+            <line id="211" firstPoint="133" typeLine="dotLine" secondPoint="36" lineColor="darkGreen"/>
+            <point id="219" firstPoint="130" typeLine="none" mx="0.132292" secondPoint="133" length="CurrentLength/2" name="E13" lineColor="black" type="alongLine" my="0.264583"/>
+            <point id="220" firstPoint="133" typeLine="none" mx="0.132292" secondPoint="131" length="CurrentLength/2" name="E14" lineColor="black" type="alongLine" my="0.264583"/>
+            <point id="221" firstPoint="130" typeLine="none" mx="0.132292" secondPoint="36" length="CurrentLength/2" name="E15" lineColor="black" type="alongLine" my="0.264583"/>
+            <point id="222" firstPoint="131" typeLine="none" mx="0.132292" secondPoint="36" length="CurrentLength/2" name="E16" lineColor="black" type="alongLine" my="0.264583"/>
+            <line id="223" firstPoint="221" typeLine="dotLine" secondPoint="219" lineColor="darkGreen"/>
+            <line id="224" firstPoint="222" typeLine="dotLine" secondPoint="220" lineColor="darkGreen"/>
         </calculation>
         <modeling>
             <point id="141" idObject="32" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
@@ -331,10 +470,24 @@
             <point id="155" idObject="135" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
             <point id="156" idObject="138" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
             <spline id="157" idObject="154" inUse="true" type="modelingSpline"/>
+            <point id="225" idObject="219" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
+            <point id="226" idObject="130" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
+            <point id="227" idObject="221" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
+            <point id="229" idObject="133" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
+            <point id="230" idObject="219" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
+            <point id="231" idObject="221" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
+            <point id="232" idObject="36" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
+            <point id="234" idObject="133" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
+            <point id="235" idObject="36" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
+            <point id="236" idObject="222" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
+            <point id="237" idObject="220" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
+            <point id="239" idObject="220" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
+            <point id="240" idObject="222" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
+            <point id="241" idObject="131" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
         </modeling>
         <details>
-            <detail id="148" version="2" forbidFlipping="false" width="1.5" united="false" mx="-3.57265" name="Back Button" inLayout="true" seamAllowance="true" my="-69.3508">
-                <data letter="BB" width="354.284" mx="1605.21" height="233.858" fontSize="56" visible="true" rotation="0" my="7556.15">
+            <detail id="148" version="2" forbidFlipping="false" width="1.5" united="false" mx="402.297" name="Back Bottom" inLayout="false" seamAllowance="true" my="-90.4763">
+                <data letter="BB" width="354.284" mx="1677.79" height="233.858" fontSize="57" visible="true" rotation="0" my="7628.73">
                     <mcp placement="0" material="4" cutNumber="1" userDef="RipStop"/>
                 </data>
                 <patternInfo width="0" mx="0" height="0" fontSize="0" visible="false" rotation="0" my="0"/>
@@ -349,7 +502,7 @@
                     <node idObject="147" type="NodePoint"/>
                 </nodes>
             </detail>
-            <detail id="152" version="2" forbidFlipping="false" width="1.5" united="false" mx="-2.33864" name="Back Top" inLayout="true" seamAllowance="true" my="-112.136">
+            <detail id="152" version="2" forbidFlipping="false" width="1.5" united="false" mx="-2.33864" name="Back Top" inLayout="false" seamAllowance="true" my="-112.136">
                 <data letter="BT" width="314.142" mx="4283.98" height="203.751" fontSize="50" visible="true" rotation="0" my="4350.98">
                     <mcp placement="0" material="4" cutNumber="1" userDef="Net"/>
                 </data>
@@ -361,7 +514,7 @@
                     <node idObject="151" type="NodePoint"/>
                 </nodes>
             </detail>
-            <detail id="158" version="2" forbidFlipping="false" width="1.5" united="false" mx="-0.437433" name="Back Door" inLayout="true" seamAllowance="true" my="-99.2392">
+            <detail id="158" version="2" forbidFlipping="false" width="1.5" united="false" mx="409.06" name="Back Door" inLayout="false" seamAllowance="true" my="-227.914">
                 <data letter="BD" width="277.345" mx="3534.1" height="197.061" fontSize="44" visible="true" rotation="0" my="6991.7">
                     <mcp placement="0" material="4" cutNumber="1" userDef="RipStop"/>
                 </data>
@@ -371,6 +524,56 @@
                     <node idObject="155" type="NodePoint"/>
                     <node idObject="156" type="NodePoint"/>
                     <node idObject="157" reverse="0" type="NodeSpline"/>
+                </nodes>
+            </detail>
+            <detail id="228" version="2" forbidFlipping="false" width="1.5" united="false" mx="-6.59339" name="Back Top 1" inLayout="true" seamAllowance="true" my="0">
+                <data letter="BT1" width="223.333" mx="2462.37" height="177.395" fontSize="42" visible="true" rotation="0" my="6062.5">
+                    <mcp placement="0" material="4" cutNumber="1" userDef="Net"/>
+                </data>
+                <patternInfo width="0" mx="0" height="0" fontSize="0" visible="false" rotation="0" my="0"/>
+                <grainline arrows="0" mx="0" length="0" visible="false" rotation="90" my="0"/>
+                <nodes>
+                    <node idObject="225" before="0" type="NodePoint"/>
+                    <node idObject="226" type="NodePoint"/>
+                    <node idObject="227" after="0" type="NodePoint"/>
+                </nodes>
+            </detail>
+            <detail id="233" version="2" forbidFlipping="false" width="1.5" united="false" mx="0" name="Back Top 2" inLayout="true" seamAllowance="true" my="0">
+                <data letter="BT2" width="220.051" mx="3741.78" height="170.832" fontSize="41" visible="true" rotation="0" my="5319.32">
+                    <mcp placement="0" material="4" cutNumber="1" userDef="Net"/>
+                </data>
+                <patternInfo width="0" mx="0" height="0" fontSize="0" visible="false" rotation="0" my="0"/>
+                <grainline arrows="0" mx="0" length="0" visible="false" rotation="90" my="0"/>
+                <nodes>
+                    <node idObject="229" before="0" type="NodePoint"/>
+                    <node idObject="230" after="0" type="NodePoint"/>
+                    <node idObject="231" before="0" type="NodePoint"/>
+                    <node idObject="232" after="0" type="NodePoint"/>
+                </nodes>
+            </detail>
+            <detail id="238" version="2" forbidFlipping="false" width="1.5" united="false" mx="4.86174" name="Back Top 3" inLayout="true" seamAllowance="true" my="0.173634">
+                <data letter="BT3" width="216.77" mx="4814.6" height="174.114" fontSize="40" visible="true" rotation="0" my="5230.74">
+                    <mcp placement="0" material="4" cutNumber="1" userDef="Net"/>
+                </data>
+                <patternInfo width="0" mx="0" height="0" fontSize="0" visible="false" rotation="0" my="0"/>
+                <grainline arrows="0" mx="0" length="0" visible="false" rotation="90" my="0"/>
+                <nodes>
+                    <node idObject="234" after="0" type="NodePoint"/>
+                    <node idObject="235" before="0" type="NodePoint"/>
+                    <node idObject="236" after="0" type="NodePoint"/>
+                    <node idObject="237" before="0" type="NodePoint"/>
+                </nodes>
+            </detail>
+            <detail id="242" version="2" forbidFlipping="false" width="1.5" united="false" mx="7.63988" name="Back Top 4" inLayout="true" seamAllowance="true" my="0.26045">
+                <data letter="BT4" width="229.895" mx="5959.61" height="164.27" fontSize="40" visible="true" rotation="0" my="6142.78">
+                    <mcp placement="0" material="4" cutNumber="1" userDef="Net"/>
+                </data>
+                <patternInfo width="0" mx="0" height="0" fontSize="0" visible="false" rotation="0" my="0"/>
+                <grainline arrows="0" mx="0" length="0" visible="false" rotation="90" my="0"/>
+                <nodes>
+                    <node idObject="239" after="0" type="NodePoint"/>
+                    <node idObject="240" before="0" type="NodePoint"/>
+                    <node idObject="241" type="NodePoint"/>
                 </nodes>
             </detail>
         </details>

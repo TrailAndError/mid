@@ -14,11 +14,11 @@
         <email/>
     </personal>
     <body-measurements>
-        <m value="5" name="@button_wall"/>
+        <m value="5" name="@bottom_wall"/>
         <m value="125" name="@height"/>
         <m value="5" name="@spacing_top"/>
         <m value="50" name="@wall_height"/>
-        <m value="@wall_height-@button_wall" name="@top_wallheight"/>
+        <m value="@wall_height-@bottom_wall" name="@top_wallheight"/>
         <m value="3.14159" name="@Pi"/>
         <m value="90" name="@width"/>
         <m value="290" name="@lenght"/>

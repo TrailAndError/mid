@@ -295,7 +295,7 @@
                     <node idObject="163" type="NodePoint"/>
                 </nodes>
             </detail>
-            <detail id="182" version="2" forbidFlipping="false" width="1.5" united="false" mx="102.317" name="Front large Button 1" inLayout="true" seamAllowance="true" my="-5.45207">
+            <detail id="182" version="2" forbidFlipping="false" width="1.5" united="false" mx="102.317" name="Front large Bottom 1" inLayout="true" seamAllowance="true" my="-5.45207">
                 <data letter="Fl1" width="521.006" mx="4466.98" height="232.519" fontSize="52" visible="true" rotation="0" my="5317.37">
                     <mcp placement="0" material="4" cutNumber="2" userDef="sil Poly"/>
                 </data>
